@@ -238,7 +238,7 @@ func Mount(remote string, remotePath string, targetPath string, flags map[string
 	mountArgs = append(
 		mountArgs,
 		"mount",
-		fmt.Sprintf(":%s:%s", remote, remotePath),
+		fmt.Sprintf("%s:%s", remote, remotePath),
 		targetPath,
 		"--daemon",
 	)
